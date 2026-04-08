@@ -12,7 +12,7 @@ pipeline {
         stage('Checkout') {
 
             steps {
-                git 'https://github.com/username/lab11-junit.git'
+                git 'https://github.com/nharshitha728-boop/lab11.git'
             }
         }
 
