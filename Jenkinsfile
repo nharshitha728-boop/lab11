@@ -2,16 +2,16 @@ pipeline {
     agent any
 
     stages {
+
         stage('Checkout') {
             steps {
-                // Make sure this URL is your actual repo!
-                git branch: 'main', url: 'https://github.com/nharshitha728-boop/lab11.git'
+                git branch: 'main',
+                    url: 'https://github.com/nharshitha728-boop/lab11.git'
             }
         }
 
         stage('Build & Test') {
             steps {
-                // Use 'bat' for Windows lab PCs
                 bat 'mvn clean test'
             }
         }
